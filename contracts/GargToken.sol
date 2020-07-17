@@ -9,30 +9,28 @@ contract GargToken {
     event Transfer(
         address indexed _from,
         address indexed _to,
-        uint _value
+        uint256 _value
     );
 
     event Approval(
         address indexed _owner,
         address indexed _spender,
-        uint _value
+        uint256 _value
     );
 
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
     constructor(uint256 _initialSupply) public {
-        // allocate the initial supply
         balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
     }
 
-    //Transfer function, Required!
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value, "Not enough balance");
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
-        emit Transfer(msg.sender, _to,_value);
+        emit Transfer(msg.sender, _to, _value);
         return true;
     }
 
@@ -51,9 +49,4 @@ contract GargToken {
         emit Transfer(_from, _to, _value);
         return true;
     }
-
-    // transferFrom
-    // transfer event
-
-    
 }
