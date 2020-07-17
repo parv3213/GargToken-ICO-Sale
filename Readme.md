@@ -1,6 +1,6 @@
 # GargToken
 
-## A ERC-20 Token
+## An ERC-20 Token
 
 #### Created a ERC-20 Token called Garg Token.
 
