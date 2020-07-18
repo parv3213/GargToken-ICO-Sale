@@ -1,0 +1,177 @@
+{
+  "contractName": "GargTokenSale",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/parvgarg/Desktop/Current/course-ERC20/contracts/GargTokenSale.sol\":\"GargTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/parvgarg/Desktop/Current/course-ERC20/contracts/GargTokenSale.sol\":{\"keccak256\":\"0xce7460a1b7ada2e2af149843f3fbb20479d8d6e74c46eb11c381465cbe482e20\",\"urls\":[\"bzz-raw://50f9cb35fb6daddc3df0f155bb8bb22efdc8b5f9635e2da18b5bb9c2f945c359\",\"dweb:/ipfs/QmPFEDsbR6Rr4JsYQnipjC4DpexPNKwTCAwgY9gBQ8QJzs\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158205a58091454c11d466fc4a675f18c1956e2e57fdd7ea8276a32e596035fdf629f64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158205a58091454c11d466fc4a675f18c1956e2e57fdd7ea8276a32e596035fdf629f64736f6c63430005100032",
+  "sourceMap": "25:122:1:-;;;53:92;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:92:1;25:122;;;;;;",
+  "deployedSourceMap": "25:122:1:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\ncontract GargTokenSale {\n\n  constructor() public {\n    // Assign an admin\n    // Token contract\n    // Token Price  \n  }\n}\n",
+  "sourcePath": "/Users/parvgarg/Desktop/Current/course-ERC20/contracts/GargTokenSale.sol",
+  "ast": {
+    "absolutePath": "/Users/parvgarg/Desktop/Current/course-ERC20/contracts/GargTokenSale.sol",
+    "exportedSymbols": {
+      "GargTokenSale": [
+        195
+      ]
+    },
+    "id": 196,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 190,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 195,
+        "linearizedBaseContracts": [
+          195
+        ],
+        "name": "GargTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 193,
+              "nodeType": "Block",
+              "src": "74:71:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 194,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 191,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "returnParameters": {
+              "id": 192,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 195,
+            "src": "53:92:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 196,
+        "src": "25:122:1"
+      }
+    ],
+    "src": "0:148:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/parvgarg/Desktop/Current/course-ERC20/contracts/GargTokenSale.sol",
+    "exportedSymbols": {
+      "GargTokenSale": [
+        195
+      ]
+    },
+    "id": 196,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 190,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 195,
+        "linearizedBaseContracts": [
+          195
+        ],
+        "name": "GargTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 193,
+              "nodeType": "Block",
+              "src": "74:71:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 194,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 191,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "returnParameters": {
+              "id": 192,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 195,
+            "src": "53:92:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 196,
+        "src": "25:122:1"
+      }
+    ],
+    "src": "0:148:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-07-17T12:04:40.533Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
