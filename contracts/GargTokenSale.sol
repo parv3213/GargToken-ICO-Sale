@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 import "./GargToken.sol";
 
 contract GargTokenSale {
-    address admin;
+    address payable admin;
     GargToken public tokenContract;
     uint256 public tokenPrice;
     uint256 public tokensSold;
@@ -31,5 +31,18 @@ contract GargTokenSale {
         );
         tokensSold += _numberOfTokens;
         emit Sell(msg.sender, _numberOfTokens);
+    }
+
+    function endSale() public {
+        require(msg.sender == admin, "Only the admin can call this function");
+        require(
+            tokenContract.transfer(
+                msg.sender,
+                tokenContract.balanceOf(address(this))
+            ),
+            "Unable to transfer tokens to admin"
+        );
+        // destroy contract
+        selfdestruct(admin);
     }
 }

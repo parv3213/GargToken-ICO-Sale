@@ -60,4 +60,29 @@ contract("GargTokenSale", async (accounts) => {
 			}
 		});
 	});
+
+	describe("End token sale function", () => {
+		var adminBalanceBefore;
+		var adminBalanceAfter;
+		it("Only be called by admin", async () => {
+			try {
+				await tokenSale.endSale({ from: accounts[1] });
+				assert.fail();
+			} catch (e) {
+				assert(e.message.indexOf("revert") !== -1, "Error message must contain revert");
+			}
+		});
+
+		it("Transfer tokens back to admin", async () => {
+			await tokenSale.endSale({ from: admin });
+			const adminTokenBalance = await token.balanceOf(admin);
+			const contractTokenBalance = await token.balanceOf(tokenSale.address);
+			assert.equal(adminTokenBalance.toNumber(), 1000000 - 10, "Contract balance should go to admin");
+			assert.equal(contractTokenBalance.toNumber(), 0, "Contract balance should go to admin");
+		});
+
+		it("Self Destruct", async () => {
+			assert.equal(tokenPrice.address, undefined, "TokenPrice address is undefined");
+		});
+	});
 });
