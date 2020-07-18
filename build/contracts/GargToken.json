@@ -5212,12 +5212,13 @@
         }
       },
       "links": {},
-      "address": "0x63392aE3099D68f6bA308C9075eC8bcef95A1F5d",
-      "transactionHash": "0xc50ab2670d7ea96b10f47213808d26eef438f20b07d1dba5fc37dedea85d59b8"
+      "address": "0xcfABB278a62f0292B4D6fea88BBbA6f4E900C1b3",
+      "transactionHash": "0xf7e33088f0047b37ef36ec81ef6718b02dc5f893ae932f83ad2ba2a4c539a5be"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-07-17T12:04:40.530Z",
+  "updatedAt": "2020-07-18T11:15:28.646Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
