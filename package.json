@@ -1,27 +1,27 @@
 {
-  "name": "course-ERC20",
-  "version": "1.0.0",
-  "description": "",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/parv3213/ERC20-Token-Sale.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/parv3213/ERC20-Token-Sale/issues"
-  },
-  "homepage": "https://github.com/parv3213/ERC20-Token-Sale#readme",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "web3": "^1.2.9"
-  }
+	"name": "GargToken Sale",
+	"version": "1.0.0",
+	"description": "GargToken sale ICO",
+	"main": "truffle-config.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/parv3213/ERC20-Token-Sale.git"
+	},
+	"keywords": [],
+	"author": "Parv Garg",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/parv3213/ERC20-Token-Sale/issues"
+	},
+	"homepage": "https://github.com/parv3213/ERC20-Token-Sale#readme",
+	"dependencies": {
+		"chai": "^4.2.0",
+		"web3": "^1.2.9"
+	}
 }
