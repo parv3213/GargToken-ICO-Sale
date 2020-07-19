@@ -6,11 +6,7 @@ contract GargToken {
     string public standard = "Garg Token v1.0"; //Not in documentation, extra!
     uint256 public totalSupply;
 
-    event Transfer(
-        address indexed _from,
-        address indexed _to,
-        uint256 _value
-    );
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     event Approval(
         address indexed _owner,
@@ -26,7 +22,10 @@ contract GargToken {
         totalSupply = _initialSupply;
     }
 
-    function transfer(address _to, uint256 _value) public returns (bool success) {
+    function transfer(address _to, uint256 _value)
+        public
+        returns (bool success)
+    {
         require(balanceOf[msg.sender] >= _value, "Not enough balance");
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
@@ -34,15 +33,28 @@ contract GargToken {
         return true;
     }
 
-    function approve(address _spender, uint256 _value) public returns(bool success){
+    function approve(address _spender, uint256 _value)
+        public
+        returns (bool success)
+    {
         allowance[msg.sender][_spender] = _value;
         emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns(bool success) {
-        require(balanceOf[_from] >= _value,"_from does not have enough tokens");
-        require(allowance[_from][msg.sender] >= _value,"Spender limit exceeded");
+    function transferFrom(
+        address _from,
+        address _to,
+        uint256 _value
+    ) public returns (bool success) {
+        require(
+            balanceOf[_from] >= _value,
+            "_from does not have enough tokens"
+        );
+        require(
+            allowance[_from][msg.sender] >= _value,
+            "Spender limit exceeded"
+        );
         balanceOf[_from] -= _value;
         balanceOf[_to] += _value;
         allowance[_from][msg.sender] -= _value;
