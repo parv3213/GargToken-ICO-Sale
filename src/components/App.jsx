@@ -89,7 +89,13 @@ export default function App() {
 		content = <p className="text-center">Loading...</p>;
 	} else {
 		content = (
-			<Body buyTokens={buyTokens} tokenBalance={tokenBalance} tokenPrice={tokenPrice} tokensSold={tokensSold} />
+			<Body
+				account={account}
+				buyTokens={buyTokens}
+				tokenBalance={tokenBalance}
+				tokenPrice={tokenPrice}
+				tokensSold={tokensSold}
+			/>
 		);
 	}
 
