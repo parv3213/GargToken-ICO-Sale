@@ -1,15 +1,27 @@
 # GargToken
 
-## An ERC-20 Token
+## An ERC-20 Token ICO Sale
 
-#### Created a ERC-20 Token called Garg Token.
+#### Working:
 
-#### About
+![Working](Working-gif.gif)
+
+#### About GargTokenSale Contract
+
+- Functions Included:
+  - admin
+  - tokenContract
+  - tokenPrice
+  - tokensSold
+  - buyTokens
+  - endSale
+
+#### About GargToken Contract
 
 - Token Name: GargToken
 - Token Symbol: Garg
 - Token Standard: Garg Token v1.0
-- totalSupply: <passed by the owner>
+- totalSupply: \<passed by the owner\>
 - Functions Included:
   - balanceOf
   - transfer
